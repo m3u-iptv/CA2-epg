@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout my repo
         uses: actions/checkout@v4
+        with:
+          ref: CA2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,5 +37,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git add -f guide.xml
           git commit -m "Update Goldmines EPG" || echo "No changes to commit"
-          git push
+          git push origin HEAD:CA2
           
