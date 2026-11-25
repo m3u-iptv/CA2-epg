@@ -21,14 +21,13 @@ jobs:
           node-version: '22'
 
       - name: Clone iptv-org/epg
-        run: git clone --depth 1 https://github.com/iptv-org/epg.git epg-tool
+        run: git clone --depth 1 -b master https://github.com/iptv-org/epg.git epg-tool
 
       - name: Install and Grab EPG
         run: |
           cd epg-tool
           npm install
-          npm run postinstall || true
-          npx tsx scripts/commands/epg/grab.ts --channels=../goldmines.channels.xml --output=../guide.xml --days=2
+          npm run grab --- --channels=../goldmines.channels.xml --output=../guide.xml --days=2
 
       - name: Save guide.xml to GitHub
         run: |
