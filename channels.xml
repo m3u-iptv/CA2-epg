@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<site generator-info-name="WebGrab+Plus/w MDB &amp; REX Postprocess -- version V5.3.0.8 -- Jan van Straaten" site="dishtv.in">
-  <channels>    <channel update="i" site="dishtv.in" site_id="27##143087" xmltv_id="Goldmines">Goldmines</channel>    <channel update="i" site="dishtv.in" site_id="26##143089" xmltv_id="Goldmines Bollywood">Goldmines Bollywood</channel>
-    <channel update="i" site="dishtv.in" site_id="27##142881" xmltv_id="Goldmines Movies">Goldmines Movies</channel>  </channels>
-</site>
+<channels>
+  <channel site="dishtv.in" lang="hi" xmltv_id="Goldmines.in@SD" site_id="143087">Goldmines</channel>
+  <channel site="dishtv.in" lang="hi" xmltv_id="GoldminesBollywood.in@SD" site_id="143089">Goldmines Bollywood</channel>
+  <channel site="dishtv.in" lang="hi" xmltv_id="GoldminesMovies.in@SD" site_id="142881">Goldmines Movies</channel>
+</channels>
