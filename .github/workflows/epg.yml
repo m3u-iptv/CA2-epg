@@ -1,4 +1,4 @@
-name: Grab DishTV EPG
+name: Grab Dish TV EPG
 
 on:
   schedule:
@@ -35,5 +35,5 @@ jobs:
           git config user.email "github-actions@github.com"
           git add -f guide.xml
           git commit -m "Update DishTV EPG" || echo "No changes to commit"
-          git push origin master
+          git push origin main
           
