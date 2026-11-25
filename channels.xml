@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="dishtv.in" lang="en" xmltv_id="Goldmines.in@SD" site_id="143087">Goldmines</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="GoldminesBollywood.in@SD" site_id="143089">Goldmines Bollywood</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="GoldminesMovies.in@SD" site_id="142881">Goldmines Movies</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="Goldmines.in@SD" site_id="308">Goldmines</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="GoldminesBollywood.in@SD" site_id="317">Goldmines Bollywood</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="GoldminesMovies.in@SD" site_id="312">Goldmines Movies</channel>
 </channels>
