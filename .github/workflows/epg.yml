@@ -34,6 +34,6 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add -f guide.xml
-          git commit -m "Update dishtv EPG" || echo "No changes to commit"
+          git commit -m "Update DishTV EPG" || echo "No changes to commit"
           git push origin master
           
