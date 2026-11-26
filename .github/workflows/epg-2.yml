@@ -1,0 +1,23 @@
+name: Update EPG 2 (Airtel)
+
+on:
+  schedule:
+    - cron: '30 0 * * *' # Pehle workflow se 30 min baad chalega taaki conflict na ho
+  workflow_dispatch:
+
+jobs:
+  grab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install
+      - run: npm run grab -- --channels=airtel.xml --output=guide-airtel.xml --days=2
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add guide-airtel.xml
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update Airtel EPG"
+          git push
