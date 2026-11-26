@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
-      - run: npm run grab -- --channels=airtel.xml --output=guide-airtel.xml --days=2
+      - run: npm run grab --airtelxstream.in--channels=airtel.xml --output=guide-airtel.xml --days=2
       - run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
