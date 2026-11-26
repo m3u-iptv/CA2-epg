@@ -1,4 +1,4 @@
-name: Grab Goldmines EPG
+name: Grab TataPlay EPG
 
 on:
   schedule:
@@ -27,13 +27,13 @@ jobs:
         run: |
           cd epg-tool
           npm install
-          npm run grab --- --channels=../goldmines.channels.xml --output=../guide.xml --days=2
+          npm run grab --- --channels=../tataplay.channels.xml --output=../guide.xml --days=2
 
       - name: Save guide.xml to GitHub
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add -f guide.xml
-          git commit -m "Update Goldmines EPG" || echo "No changes to commit"
+          git commit -m "Update TataPlay EPG" || echo "No changes to commit"
           git push origin main
           
