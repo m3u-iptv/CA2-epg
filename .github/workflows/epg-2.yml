@@ -27,7 +27,8 @@ jobs:
         run: |
           cd epg-tool
           npm install
-          npm run grab --- --channels=../airtel.xml --output=../guide.xml --days=2
+          npm run grab --- --channels=../airtel.xml --output=../guide.xml --days=2 --proxy="socks5://user:pass@indian-ip:port"
+
 
       - name: Save guide.xml to GitHub
         run: |
